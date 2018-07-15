@@ -21,8 +21,8 @@ using Apache.NMS.Util;
 
 namespace Apache.NMS
 {
-#if NET_3_5 || MONO
-	public static class MessageExtensions
+#if NET_3_5 || MONO || NETSTANDARD2_0
+    public static class MessageExtensions
 	{
 		/// <summary>
 		/// Deserializes the object from Xml, and returns it.

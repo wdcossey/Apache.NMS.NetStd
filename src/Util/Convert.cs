@@ -55,33 +55,33 @@ namespace Apache.NMS.Util
 			}
 		}
 
-		/// <summary>
-		/// Convert an object into a text message.  The object must be serializable to XML.
-		/// </summary>
-#if NET_3_5 || MONO
-		[Obsolete]
+        /// <summary>
+        /// Convert an object into a text message.  The object must be serializable to XML.
+        /// </summary>
+#if NET_3_5 || MONO || NETSTANDARD2_0
+        [Obsolete]
 #endif
 		public static ITextMessage ToXmlMessage(IMessageProducer producer, object obj)
 		{
 			return SerializeObjToMessage(producer.CreateTextMessage(), obj);
 		}
 
-		/// <summary>
-		/// Convert an object into a text message.  The object must be serializable to XML.
-		/// </summary>
-#if NET_3_5 || MONO
-		[Obsolete]
+        /// <summary>
+        /// Convert an object into a text message.  The object must be serializable to XML.
+        /// </summary>
+#if NET_3_5 || MONO || NETSTANDARD2_0
+        [Obsolete]
 #endif
 		public static ITextMessage ToXmlMessage(ISession session, object obj)
 		{
 			return SerializeObjToMessage(session.CreateTextMessage(), obj);
 		}
 
-		/// <summary>
-		/// Convert a text message into an object.  The object must be serializable from XML.
-		/// </summary>
-#if NET_3_5 || MONO
-		[Obsolete]
+        /// <summary>
+        /// Convert a text message into an object.  The object must be serializable from XML.
+        /// </summary>
+#if NET_3_5 || MONO || NETSTANDARD2_0
+        [Obsolete]
 #endif
 		public static object FromXmlMessage(IMessage message)
 		{

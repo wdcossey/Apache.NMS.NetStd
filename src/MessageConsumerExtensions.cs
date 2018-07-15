@@ -21,8 +21,8 @@ using Apache.NMS.Util;
 
 namespace Apache.NMS
 {
-#if NET_3_5 || MONO
-	public static class MessageConsumerExtensions
+#if NET_3_5 || MONO || NETSTANDARD2_0
+    public static class MessageConsumerExtensions
 	{
 		/// <summary>
 		/// Receives the message from the destination for this consumer.  The object must be de-serializable from XML.

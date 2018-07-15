@@ -21,8 +21,8 @@ using Apache.NMS.Util;
 
 namespace Apache.NMS
 {
-#if NET_3_5 || MONO
-	public static class MessageProducerExtensions
+#if NET_3_5 || MONO || NETSTANDARD2_0
+    public static class MessageProducerExtensions
 	{
 		/// <summary>
 		/// Extension function to create a text message from an object.  The object must be serializable to XML.
