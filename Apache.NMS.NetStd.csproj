@@ -3,13 +3,20 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Apache.NMS</RootNamespace>
-    <Product>Apache NMS Class Library</Product>
-    <Description>Apache NMS (.Net Messaging Library): An abstract interface to Message Oriented Middleware (MOM) providers</Description>
+    <Product>Apache NMS Class Library for .net standard</Product>
+    <Description>Apache NMS (.Net Standard Messaging Library): An abstract interface to Message Oriented Middleware (MOM) providers</Description>
     <Copyright>Copyright (C) 2005-2015 Apache Software Foundation</Copyright>
-    <AssemblyVersion>1.7.1.3894</AssemblyVersion>
-    <Version>1.7.1.3894</Version>
-    <Authors>Apache Software Foundation</Authors>
+    <AssemblyVersion>1.7.1.3895</AssemblyVersion>
+    <Version>1.7.1.3895</Version>
+    <Authors>Apache Software Foundation, William D Cossey</Authors>
     <Company></Company>
+    <PackageReleaseNotes>Apache.NMS for .NET Standard</PackageReleaseNotes>
+    <PackageTags>Apache,NMS,Messaging,NetStandard</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0.txt</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/wdcossey/Apache.NMS.NetStd</RepositoryUrl>
+    <PackageProjectUrl>http://activemq.apache.org/nms/</PackageProjectUrl>
   </PropertyGroup>
 
 </Project>
