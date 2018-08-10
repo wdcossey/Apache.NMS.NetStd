@@ -11,7 +11,7 @@
     <Authors>Apache Software Foundation, William D Cossey</Authors>
     <Company></Company>
     <PackageReleaseNotes>Apache.NMS (http://activemq.apache.org/nms/) for .NET Standard.
-Fix for hardcoded assembly names.</PackageReleaseNotes>
+Added CLSCompliant assembly info.</PackageReleaseNotes>
     <PackageTags>Apache,NMS,Messaging,NetStandard</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
