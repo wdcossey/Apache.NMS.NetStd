@@ -58,7 +58,7 @@ namespace Apache.NMS.Util
         /// <summary>
         /// Convert an object into a text message.  The object must be serializable to XML.
         /// </summary>
-#if NET_3_5 || MONO || NETSTANDARD2_0
+#if NET_3_5 || MONO || NETCORE
         [Obsolete]
 #endif
 		public static ITextMessage ToXmlMessage(IMessageProducer producer, object obj)
@@ -69,7 +69,7 @@ namespace Apache.NMS.Util
         /// <summary>
         /// Convert an object into a text message.  The object must be serializable to XML.
         /// </summary>
-#if NET_3_5 || MONO || NETSTANDARD2_0
+#if NET_3_5 || MONO || NETCORE
         [Obsolete]
 #endif
 		public static ITextMessage ToXmlMessage(ISession session, object obj)
@@ -80,7 +80,7 @@ namespace Apache.NMS.Util
         /// <summary>
         /// Convert a text message into an object.  The object must be serializable from XML.
         /// </summary>
-#if NET_3_5 || MONO || NETSTANDARD2_0
+#if NET_3_5 || MONO || NETCORE
         [Obsolete]
 #endif
 		public static object FromXmlMessage(IMessage message)

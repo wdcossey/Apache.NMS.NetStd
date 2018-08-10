@@ -77,8 +77,8 @@ namespace Apache.NMS
 	    private static string PlatformFileName(string fileName)
 	    {
 	        var append = (string)null;
-#if NETSTANDARD2_0
-	        append = ".NetStd";
+#if NETCORE
+            append = ".NetStd";
 #endif
 	        return $"{fileName}{append}";
 	    }

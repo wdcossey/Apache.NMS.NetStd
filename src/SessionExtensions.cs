@@ -20,7 +20,7 @@ using Apache.NMS.Util;
 
 namespace Apache.NMS
 {
-#if NET_3_5 || MONO || NETSTANDARD2_0
+#if NET_3_5 || MONO || NETCORE
     public static class SessionExtensions
 	{
 		/// <summary>
