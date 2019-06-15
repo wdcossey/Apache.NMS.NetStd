@@ -15,11 +15,12 @@ Added CLSCompliant assembly info.</PackageReleaseNotes>
     <PackageTags>Apache,NMS,Messaging,NetStandard</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0.txt</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <RepositoryUrl>https://github.com/wdcossey/Apache.NMS.NetStd</RepositoryUrl>
     <PackageProjectUrl>https://github.com/wdcossey/Apache.NMS.NetStd</PackageProjectUrl>
     <PackageId>Apache.NMS.NetStd</PackageId>
     <AssemblyName>Apache.NMS</AssemblyName>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -29,5 +30,12 @@ Added CLSCompliant assembly info.</PackageReleaseNotes>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DefineConstants>TRACE;NETCORE</DefineConstants>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
