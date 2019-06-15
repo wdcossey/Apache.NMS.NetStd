@@ -6,8 +6,8 @@
     <Product>Apache NMS Class Library for .net standard</Product>
     <Description>Apache NMS (.Net Standard Messaging Library): An abstract interface to Message Oriented Middleware (MOM) providers</Description>
     <Copyright>Copyright (C) 2005-2015 Apache Software Foundation</Copyright>
-    <AssemblyVersion>1.7.1.3898</AssemblyVersion>
-    <Version>1.7.1.3898</Version>
+    <AssemblyVersion>1.7.1.3899</AssemblyVersion>
+    <Version>1.7.1.3899</Version>
     <Authors>Apache Software Foundation, William D Cossey</Authors>
     <Company></Company>
     <PackageReleaseNotes>Apache.NMS (http://activemq.apache.org/nms/) for .NET Standard.
@@ -18,6 +18,8 @@ Added CLSCompliant assembly info.</PackageReleaseNotes>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0.txt</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/wdcossey/Apache.NMS.NetStd</RepositoryUrl>
     <PackageProjectUrl>https://github.com/wdcossey/Apache.NMS.NetStd</PackageProjectUrl>
+    <PackageId>Apache.NMS.NetStd</PackageId>
+    <AssemblyName>Apache.NMS</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

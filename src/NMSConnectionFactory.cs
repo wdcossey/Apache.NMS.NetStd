@@ -54,34 +54,18 @@ namespace Apache.NMS
 		/// </summary>
 		static NMSConnectionFactory()
 		{
-		    schemaProviderFactoryMap = new Dictionary<string, ProviderFactoryInfo>
-		    {
-		        ["activemq"]      = new ProviderFactoryInfo(PlatformFileName("Apache.NMS.ActiveMQ"), "Apache.NMS.ActiveMQ.ConnectionFactory"     ),
-		        ["activemqnettx"] = new ProviderFactoryInfo(PlatformFileName("Apache.NMS.ActiveMQ"), "Apache.NMS.ActiveMQ.NetTxConnectionFactory"),
-		        ["tcp"]           = new ProviderFactoryInfo(PlatformFileName("Apache.NMS.ActiveMQ"), "Apache.NMS.ActiveMQ.ConnectionFactory"     ),
-		        ["ems"]           = new ProviderFactoryInfo(PlatformFileName("Apache.NMS.EMS")     , "Apache.NMS.EMS.ConnectionFactory"          ),
-		        ["mqtt"]          = new ProviderFactoryInfo(PlatformFileName("Apache.NMS.MQTT")    , "Apache.NMS.MQTT.ConnectionFactory"         ),
-		        ["msmq"]          = new ProviderFactoryInfo(PlatformFileName("Apache.NMS.MSMQ")    , "Apache.NMS.MSMQ.ConnectionFactory"         ),
-		        ["stomp"]         = new ProviderFactoryInfo(PlatformFileName("Apache.NMS.Stomp")   , "Apache.NMS.Stomp.ConnectionFactory"        ),
-		        ["xms"]           = new ProviderFactoryInfo(PlatformFileName("Apache.NMS.XMS")     , "Apache.NMS.XMS.ConnectionFactory"          ),
-		        ["zmq"]           = new ProviderFactoryInfo(PlatformFileName("Apache.NMS.ZMQ")     , "Apache.NMS.ZMQ.ConnectionFactory"          ),
-		        ["amqp"]          = new ProviderFactoryInfo(PlatformFileName("Apache.NMS.AMQP")    , "Apache.NMS.AMQP.ConnectionFactory"         )
-		    };
+			schemaProviderFactoryMap                    = new Dictionary<string, ProviderFactoryInfo>();
+            schemaProviderFactoryMap["activemq"]        = new ProviderFactoryInfo("Apache.NMS.ActiveMQ" , "Apache.NMS.ActiveMQ.ConnectionFactory");
+            schemaProviderFactoryMap["activemqnettx"]   = new ProviderFactoryInfo("Apache.NMS.ActiveMQ" , "Apache.NMS.ActiveMQ.NetTxConnectionFactory");
+			schemaProviderFactoryMap["tcp"]             = new ProviderFactoryInfo("Apache.NMS.ActiveMQ" , "Apache.NMS.ActiveMQ.ConnectionFactory");
+			schemaProviderFactoryMap["ems"]             = new ProviderFactoryInfo("Apache.NMS.EMS"      , "Apache.NMS.EMS.ConnectionFactory");
+            schemaProviderFactoryMap["mqtt"]            = new ProviderFactoryInfo("Apache.NMS.MQTT"     , "Apache.NMS.MQTT.ConnectionFactory");
+            schemaProviderFactoryMap["msmq"]            = new ProviderFactoryInfo("Apache.NMS.MSMQ"     , "Apache.NMS.MSMQ.ConnectionFactory");
+			schemaProviderFactoryMap["stomp"]           = new ProviderFactoryInfo("Apache.NMS.Stomp"    , "Apache.NMS.Stomp.ConnectionFactory");
+			schemaProviderFactoryMap["xms"]             = new ProviderFactoryInfo("Apache.NMS.XMS"      , "Apache.NMS.XMS.ConnectionFactory");
+			schemaProviderFactoryMap["zmq"]             = new ProviderFactoryInfo("Apache.NMS.ZMQ"      , "Apache.NMS.ZMQ.ConnectionFactory");
+			schemaProviderFactoryMap["amqp"]            = new ProviderFactoryInfo("Apache.NMS.AMQP"     , "Apache.NMS.AMQP.ConnectionFactory");
 		}
-
-        /// <summary>
-        /// Workaround for platform (.NetStd) file names.
-        /// </summary>
-        /// <param name="fileName"></param>
-        /// <returns></returns>
-	    private static string PlatformFileName(string fileName)
-	    {
-	        var append = (string)null;
-#if NETCORE
-            append = ".NetStd";
-#endif
-	        return $"{fileName}{append}";
-	    }
 
 		/// <summary>
 		/// The ConnectionFactory object must define a constructor that takes as a minimum a Uri object.
